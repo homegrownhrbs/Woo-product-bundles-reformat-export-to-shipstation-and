@@ -1,8 +1,7 @@
 /**
  * Attach our custom function to the 'shipstation_bundle_data' filter.
  * NOTE: 'shipstation_bundle_data' is a placeholder and should be replaced 
- * with the actual filter provided by the ShipStation plugin or WooCommerce 
- * if it's different.
+ *
  * Modify the bundle data string by adding a line break after each product's SKU.
  *
  * @param string $bundle_data Original product bundle data string.
