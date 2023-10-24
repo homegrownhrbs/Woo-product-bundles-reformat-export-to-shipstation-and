@@ -3,9 +3,7 @@
 Purpose:
 This code snippet is designed to reformat the product bundle data in WooCommerce before it's sent to ShipStation. The goal is to add a line break after each individual product's SKU for better readability.
 
-Code:
-php
-Copy code
+
 /**
  * Attach our custom function to the 'shipstation_bundle_data' filter.
  * NOTE: 'shipstation_bundle_data' is a placeholder and should be replaced 
@@ -34,15 +32,11 @@ Inside our custom function, we use a regular expression to search for a specific
 Once this pattern is found, the regular expression replaces the trailing comma with a comma followed by an HTML line break (<br />).
 
 Example:
+
 Input:
-
-yaml
-Copy code
 Echinacea Root Tincture: Size - 2oz, Qty - 1, SKU - 2076-2oz, Garlic Tincture: Size - 2oz, Qty - 1, SKU - 2175-2oz,
-Output:
 
-yaml
-Copy code
+Output:
 Echinacea Root Tincture: Size - 2oz, Qty - 1, SKU - 2076-2oz,<br /> Garlic Tincture: Size - 2oz, Qty - 1, SKU - 2175-2oz,<br />
 Notes:
 
